@@ -1,4 +1,12 @@
 "use-strict";
+/**
+ * same - checks if elements in arr2 are th square
+ * of the elements in arr1
+ * @arr1: first array
+ * @arr2: second array
+ *
+ * Return: true or false
+ */
 const same = (arr1, arr2) => {
 	if (arr1.length !== arr2.length) {
 		return false;
