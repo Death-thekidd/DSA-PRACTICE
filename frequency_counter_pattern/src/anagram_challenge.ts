@@ -1,5 +1,3 @@
-"use-strict";
-
 /**
  * validAnagram - determines if str2 is an anagram of str1
  * using frequency counter pattern
@@ -8,13 +6,13 @@
  *
  * Return: true if str2 is an ana gram of the first else false
  */
-const validAnagram = (str1, str2) => {
+const validAnagram = (str1: string, str2: string) => {
 	if (str1.length != str2.length) {
 		return false;
 	}
 
-	let frequencyCounter1 = {};
-	let frequencyCounter2 = {};
+	let frequencyCounter1: any = {};
+	let frequencyCounter2: any = {};
 	let str1_ = str1.split("");
 	let str2_ = str2.split("");
 	for (let char of str1_) {
@@ -43,12 +41,12 @@ const validAnagram = (str1, str2) => {
  *
  * Return: true if str2 is an ana gram of the first else false
  */
-const validAnagram2 = (str1, str2) => {
+const validAnagram2 = (str1: string, str2: string) => {
 	if (str1.length != str2.length) {
 		return false;
 	}
 
-	let frequencyCounter = {};
+	let frequencyCounter: any = {};
 	let str1_ = str1.split("");
 	let str2_ = str2.split("");
 	for (let char of str1_) {
